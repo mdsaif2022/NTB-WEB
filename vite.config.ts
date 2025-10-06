@@ -14,6 +14,24 @@ export default defineConfig({
     open: true,
     host: true
   },
+  build: {
+    rollupOptions: {
+      external: [],
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          firebase: ['firebase/app', 'firebase/auth', 'firebase/database'],
+          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-select'],
+          utils: ['framer-motion', 'lucide-react', 'date-fns']
+        }
+      }
+    },
+    commonjsOptions: {
+      include: [/node_modules/],
+      transformMixedEsModules: true
+    },
+    chunkSizeWarningLimit: 1000
+  },
   define: {
     global: 'globalThis',
     'process.env': {},
@@ -21,6 +39,6 @@ export default defineConfig({
     'process.version': JSON.stringify('v16.0.0'),
   },
   optimizeDeps: {
-    include: ['cloudinary']
+    include: ['cloudinary', 'firebase/app', 'firebase/auth', 'firebase/database']
   }
 });

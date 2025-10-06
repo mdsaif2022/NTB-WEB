@@ -1,6 +1,21 @@
-# Copy this content to create .env.local file in your project root
+# Copy this file to .env.local and replace with your actual values
 
-VITE_CLOUDINARY_CLOUD_NAME=dxijk3ivo
-VITE_CLOUDINARY_API_KEY=155419187991824
-VITE_CLOUDINARY_API_SECRET=ClE7gZfBykyHUs2l2Gz3RVc8wZ0
-NODE_ENV=development
+# Firebase Configuration (from Firebase Console)
+VITE_FIREBASE_API_KEY=AIzaSyCy3vq_hwtsAYylrscz-zW82vALb4nPJO4
+VITE_FIREBASE_AUTH_DOMAIN=narayanganj-traveller-bd.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=narayanganj-traveller-bd
+VITE_FIREBASE_STORAGE_BUCKET=narayanganj-traveller-bd.firebasestorage.app
+VITE_FIREBASE_MESSAGING_SENDER_ID=275509624245
+VITE_FIREBASE_APP_ID=1:275509624245:web:d38230dbc6d7a5a813edfc
+VITE_FIREBASE_DATABASE_URL=https://narayanganj-traveller-bd-default-rtdb.firebaseio.com/
+
+# Cloudinary Configuration (from Cloudinary Dashboard)
+VITE_CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+VITE_CLOUDINARY_API_KEY=your_cloudinary_api_key
+VITE_CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+# Instructions:
+# 1. Copy this file to .env.local
+# 2. Replace the Cloudinary values with your actual credentials
+# 3. The Firebase values are already set for your project
+# 4. Never commit .env.local to git (it's in .gitignore)
