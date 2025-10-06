@@ -1,0 +1,6 @@
+# Copy this content to create .env.local file in your project root
+
+VITE_CLOUDINARY_CLOUD_NAME=dxijk3ivo
+VITE_CLOUDINARY_API_KEY=155419187991824
+VITE_CLOUDINARY_API_SECRET=ClE7gZfBykyHUs2l2Gz3RVc8wZ0
+NODE_ENV=development
